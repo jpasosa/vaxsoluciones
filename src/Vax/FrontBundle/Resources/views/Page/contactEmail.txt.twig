@@ -1,0 +1,14 @@
+{% if (enquiry.name != '') %}
+    {{ enquiry.name }}
+{% else %}
+    Anonimo
+{% endif %}
+ se contactó desde la WEB a las {{ "now" | date("H:i") }} en la fecha {{ "now" | date("Y-m-d") }}.
+
+Su email es: {{ enquiry.email }}
+
+Mensaje:
+{{ enquiry.body }}
+
+Título:
+{{ enquiry.subject }}

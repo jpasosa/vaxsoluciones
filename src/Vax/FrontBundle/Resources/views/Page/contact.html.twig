@@ -1,0 +1,88 @@
+{% extends 'VaxFrontBundle:Page:base.html.twig' %}
+
+{% block title %}
+  :: VAX SOLUCIONES ::
+{% endblock %}
+
+{% block contacto %}
+    
+    <div class="left">
+        <h2 class="title"> CONTACTO </h2>
+        <div class="description">
+            Podés contactarnos, de Lunes a Viernes de 15hs a 20hs, acercarte a
+            <span style="font-weight: bold"> Av. San Martín 2683 </span>
+            , también vía e-mail o utilizando el siguiente formulario de contacto.
+        </div>
+        <iframe width="270" height="168" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ar/maps?f=q&amp;source=s_q&amp;hl=es&amp;q=Av+San+Mart%C3%ADn+2683,+Paternal,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires&amp;aq=&amp;sll=-37.151895,-60.029182&amp;sspn=9.521337,19.753418&amp;t=m&amp;ie=UTF8&amp;geocode=FXL_7_0dGOqD_A&amp;split=0&amp;hq=&amp;hnear=Av+San+Mart%C3%ADn+2683,+Paternal,+Buenos+Aires&amp;ll=-34.603117,-58.463745&amp;spn=0.011869,0.023088&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.ar/maps?f=q&amp;source=embed&amp;hl=es&amp;q=Av+San+Mart%C3%ADn+2683,+Paternal,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires&amp;aq=&amp;sll=-37.151895,-60.029182&amp;sspn=9.521337,19.753418&amp;t=m&amp;ie=UTF8&amp;geocode=FXL_7_0dGOqD_A&amp;split=0&amp;hq=&amp;hnear=Av+San+Mart%C3%ADn+2683,+Paternal,+Buenos+Aires&amp;ll=-34.603117,-58.463745&amp;spn=0.011869,0.023088&amp;z=14&amp;iwloc=A" style="color:#AEAEAE;text-align:left">Ver mapa más grande</a></small>
+        <!-- <img src="{{ asset('bundles/vaxfront/images/contacto/mapa.jpg') }}" alt="mapa direccion"  width="270" height="168" /> -->
+        <div class="txt-pie-mapa">
+            Te acercan 109, 24, 146, 24, 57, 34, 166 Metrobus
+        </div>
+        <div class="box-subtitles first"> <!-- telefono -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/tel.jpg') }}" alt=""  width="30" height="30" />
+            <h3 class="title"> TELÉFONO </h3>
+            <div class="dato"> (5411) 4585.4041 </div>
+        </div>
+        <div class="box-subtitles"> <!-- celular -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/celular.jpg') }}" alt=""  width="30" height="30" />
+            <h3 class="title"> CELULAR </h3>
+            <div class="dato"> (15) 5497.2228 </div>
+        </div>
+        <div class="box-subtitles"> <!-- email -->
+            <img src="{{ asset('bundles/vaxfront/images/contacto/email-icono.jpg') }}" alt=""  width="30" height="30" />
+            <h3 class="title"> E-MAIL </h3>
+            <div class="dato fine"> info@vaxsoluciones.com.ar </div>
+        </div>
+
+
+    </div>
+
+    <div class="right">
+        <div class="box-form">
+            {% if app.session.hasFlash('enviado') %}
+                <div class="flash-enviado">
+                    {{ app.session.flash('enviado') }}
+                </div>
+            {% endif %}
+
+            <form action="{{ path('contacto') }}" method="post" {{ form_enctype(form) }} class="contact-form">
+                
+                <div class="izq">
+                    {{ form_errors(form) }}
+                    
+                    {{ form_row(form.name, { 'label': 'Nombre y Apellido' }) }}
+                    {{ form_row(form.email) }}                    
+                    {{ form_row(form.subject, { 'label': 'Título' }) }}
+                    
+                </div>
+
+                <div class="der">
+                    {{ form_row(form.body, { 'label': 'Mensaje' }) }}
+                    {{ form_rest(form) }}
+                    <input class="btn-submit" type="submit" value="" />
+                </div>
+
+            </form>
+        </div>
+        <div class="bottons">
+            <a class="msn" href="#" title="Agreganos por soporte: vilat_ale@hotmail.com">
+
+            </a>
+            <a class="facebook" href="http://www.facebook.com/pages/VAXSOLUCIONES/181271151934516?fref=ts"
+                    target="_blank" >
+
+            </a>
+        </div>
+    </div>
+
+<script>
+    $(window).load(function() {
+        $("input#contact_email").css('oninvalid', 'this.setCustomValidity("Witinnovation")');
+    });
+</script>
+
+
+
+
+{% endblock %}
+

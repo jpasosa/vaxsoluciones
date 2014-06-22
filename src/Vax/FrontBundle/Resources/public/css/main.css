@@ -1,0 +1,1095 @@
+/* FORMATS */
+html,body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline
+}
+
+div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,code,del,dfn,em,img,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,tr
+  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline
+}
+
+blockquote,q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""
+}
+
+blockquote:before,q:before,blockquote:after,q:after {
+  content: ""
+}
+
+th,td,caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+ul {
+  list-style: none
+}
+
+body * {
+  outline: 0;
+  /*display: block;*/
+}
+
+/* END FORMATS */
+
+
+
+
+
+
+
+
+
+
+
+body {
+    /*background: url("/bundles/webalibresecciones/images/base/fondo_gris.jpg") repeat scroll 0 0 #fbd19e;*/
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: arial, Times New Roman;
+    /*font-size: 13px;*/
+    /*margin: 20px 0 0 0;*/
+    padding: 0;
+    display: block;
+    
+}
+
+.out-container {
+  margin: 0 auto 0 auto;
+}
+
+.out-container .header {
+  background: url("/bundles/vaxfront/images/base/pattern-header.jpg") repeat-x scroll 0 0 #FFFFFF;
+  /*height: 400px;*/
+  float: left;
+  width: 100%;
+}
+
+.out-container .header .inner-header {
+  width: 960px;
+  margin: 0 auto 10px auto;
+  /*padding: 5px 0;*/
+  /*border: 1px solid #dbd7de;*/
+  /*-moz-border-radius: 15px;*/
+  /*border-radius: 15px;*/
+  /*background-color: #dbd7de;*/
+
+}
+
+.out-container .header .inner-header .logo {
+  width: 204px;  /*ancho del logo*/
+  float: left;
+
+}
+
+.out-container .header .inner-header .logo a{
+  background: url("/bundles/vaxfront/images/base/logo.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 84px;
+  /*text-indent: -9999px;*/
+  width: 204px;
+  margin: 20px 0 0 0;
+
+}
+
+
+/*facebook*/
+
+.out-container .header .inner-header .like-facebook {
+  float: right;
+  margin: 30px 60px 0 0;
+}
+
+div.uiIconText span {
+  color: #AEAEAE !important;
+}
+
+
+
+
+
+
+
+
+
+
+/*MENUES*/
+
+.out-container .header .inner-header .nav-container {
+    /*width: 100%;*/
+    float: right;
+    margin: 80px 10px 0 0;
+    text-decoration: none;
+
+}
+
+.out-container .header .inner-header .nav-container div {
+    /*float: left;*/
+    /*margin: 0 auto 0 100px;*/
+    width: 100%;
+    font-family: 'Quantico', arial;
+    font-size: 16px;
+    color: #aeaeae;
+}
+
+.out-container .header .inner-header .nav-container div ul.nav {
+    /* float: left; */
+    width: 100%;
+    /*margin: 10px auto 10px auto;*/
+}
+
+.out-container .header .inner-header .nav-container div ul.nav li {
+  float: left;
+  margin: 0 13px 0 13px;
+
+}
+
+.out-container .header .inner-header .nav-container div ul.nav li a {
+  color: #AEAEAE;
+  /*text-decoration: none;*/
+}
+
+.out-container .header .inner-header .nav-container div ul.nav li a:hover {
+    color: #000000;
+
+}
+
+.out-container .header .inner-header .nav-container div ul.nav li a.active {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*SUBMENUES*/
+
+.out-container .header .inner-header .sub-nav {
+    float: left;
+    height: 1px; /*para que no baje el banner cuando muestra el submenu*/
+    margin: 0 0 0 130px;
+}
+
+.out-container .header .inner-header .sub-nav div {
+    float: left;
+    /*margin: 0 auto 0 100px;*/
+    width: 100%;
+    font-family: 'Quantico', arial;
+    font-size: 14px;
+    color: #aeaeae;
+
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav{
+    float: left;
+    width: 100%;
+    /*margin: 10px auto 10px auto;*/
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav li {
+  float: left;
+  margin: 0 13px 0 13px;
+
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a {
+    color: #AEAEAE;
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a:hover {
+  color: #000000;
+
+}
+
+.out-container .header .inner-header .sub-nav div ul.sub-nav li a.active {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BANNERS*/
+
+.out-container .header .inner-header .banners {
+  float: left;
+  width: 940px;
+  /*width: 100%;*/
+  margin: 30px auto 10px auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*CONTENT*/
+
+.out-container .content {
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/*en la HOME el content se divide en dos solamente. debe ser más chico el width*/
+.out-container .content .home-col-left {
+  float: left;
+  width: 470px;
+  margin: auto auto 180px auto;
+}
+
+.out-container .content .home-col-left .title {
+    font-family: 'Quantico', arial;
+    font-size: 22px;
+}
+
+.out-container .content .home-col-left .title .up {
+  color: #000000;
+}
+
+.out-container .content .home-col-left .title .down {
+  color: #9a041f;
+}
+
+.out-container .content .home-col-left ul.services {
+  float: left;
+  list-style-type: none;
+  margin: 20px 0 20px 50px;
+}
+
+.out-container .content .home-col-left ul.services li {
+  color: #5c5959;
+  /*color: #aeaeae;*/
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+}
+
+.out-container .content .home-col-left ul.services li span {
+  color: #9a041f;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
+.out-container .content .home-col-left .conocer-mas {
+  float: left;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0;
+  width:100%;
+  margin: 20px 0 0 0;
+}
+
+.out-container .content .home-col-left .conocer-mas a {
+  background: url("/bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
+  background-position: 5px 8px;
+  padding: 2px 21px 2px 22px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Quantico', arial;
+}
+
+.out-container .content .home-col-left .historia {
+  float: left;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0;
+  width:100%;
+  margin: 20px 0 0 0;
+}
+
+.out-container .content .home-col-left .historia a {
+  background: url("/bundles/vaxfront/images/base/btn-mas.png") no-repeat scroll 0 0 #9a041f;
+  background-position: 5px 8px;
+  padding: 2px 21px 2px 22px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Quantico', arial;
+}
+
+
+.out-container .content .col-left {
+  float: left;
+  width: 600px;
+  margin: 30px auto 40px auto;
+}
+
+
+.out-container .content .home-col-right {
+  float: right;
+  background: url("/bundles/vaxfront/images/ofertas/box.png") no-repeat scroll 0 0 #FFFFFF;
+  margin: 20px auto auto auto;
+  width: 490px;
+  height: 333px;
+
+
+}
+
+.out-container .content .col-right {
+  float: right;
+  width: 300px;
+  margin: 30px;
+  /*background-color: #fff9f9;*/
+  /*-moz-border-radius: 10px;*/
+  /*border-radius: 10px;*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENIDO EN COMUN */
+
+.out-container .content .col-left .content-common{
+  
+}
+
+.out-container .content .col-left .content-common .section-title {
+  font-family: 'Quantico', arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9A041F;
+  margin: 20px auto 20px auto;
+}
+
+.out-container .content .col-left .content-common .box {
+  width: 500px;
+  height: 150px;
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: #9A041F 1px solid;
+
+}
+
+.out-container .content .col-left .content-common .box .txt-left {
+  color: #5c5959;
+  width: 320px;
+  float: left;
+  font-size: 12px;
+  text-align: justify;
+  margin: 10px auto auto 10px;
+}
+
+.out-container .content .col-left .content-common .box .txt-left p {
+  margin: 10px auto 10px auto;
+}
+
+.out-container .content .col-left .content-common .box #slideshow img {
+  float: left;
+  border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  margin: 0 0 0 10px;
+}
+
+.out-container .content .col-left .content-common .box img {
+  float: right;
+  border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+}
+
+
+
+
+
+/*SLIDESHOW DE IMAGENES DE LA DERECHA*/
+
+#slideshow {
+    position:relative;
+    height:160px;
+    float: left;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+/*contenido especifico de ubiquiti en content-common*/
+#logo-ubi {
+    float: left;
+    margin: 18px 0 0 140px;
+}
+
+#logo-micro {
+  float: right;
+  margin: 18px 10px 0 0;
+}
+
+.column-pdf {
+    float: right;
+    margin-right:300px;
+    width: 100px;
+}
+
+.column-pdf a .images-pdf {
+  margin: 0 0 0 0;
+  /*float: right;*/
+}
+
+
+.out-container .content .col-left .content-common .txt-box-pie {
+  color: #5c5959;
+  font-size: 12px;
+  text-align: justify;
+  margin: 20px auto 20px auto;
+}
+
+.out-container .content .col-left .content-common .txt-box-pie p {
+  margin: 10px auto 10px auto;
+}
+
+.out-container .content .col-left .content-common .subtitle {
+  font-family: 'Quantico', arial;
+  color: #5c5959;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: #5c5959 1px solid ;
+  margin: 20px 0 10px 0;
+  width: 520px;
+}
+
+.out-container .content .col-left .content-common .subtitle.notborder {
+  border: none;
+}
+
+.out-container .content .col-left .content-common ul.list {
+  color: #5c5959;
+  font-size: 12px;
+  text-align: justify;
+  margin: 10px auto 10px 30px;
+}
+
+.out-container .content .col-left .content-common ul.list a {
+  text-decoration: none;
+  color: #5C5959;
+}
+
+.out-container .content .col-left .content-common ul.list li {
+  margin: 10px auto 20px auto;
+  font-size: 12px;
+}
+
+.out-container .content .col-left .content-common ul.list li.bold {
+  font-weight: bold;
+}
+
+.out-container .content .col-left .content-common ul.list li span {
+  color: #9a041f;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+
+.out-container .content .col-left .content-common .simple-text {
+  color: #5C5959;
+  margin: 20px auto 20px auto;
+  font-size: 12px;
+  width: 560px;
+}
+
+.out-container .content .col-left .content-common .simple-text p {
+  margin: 10px auto 10px auto;
+}
+
+.out-container .content .col-left .content-common .to-menu {
+  color: #5C5959;
+  float: right;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NUESTROS CLIENTES */
+
+.client-box {
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  /*height: 240px;*/
+  margin: 30px 10px 30px 10px;
+  width: 160px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  height: 90px;
+}
+
+.client-box:hover {
+
+}
+
+.client-box a {
+
+
+}
+
+
+
+.client-box a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.client-box a .short-margin {
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACTO*/
+
+.contact {
+  float: left;
+  margin: 30px auto 30px auto;
+
+}
+
+.contact .left {
+    float: left;
+    width: 278px;
+  
+}
+
+ .left .title {
+    font-family: 'Quantico', arial;
+    color: #9A041F;
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+}
+
+.contact .left .description {
+    color: #AEAEAE;
+    margin: 20px auto 20px auto;
+    font-size: 17px;
+    /*text-align: justify;*/
+}
+
+.contact .left .description img {
+  border: 1px solid #9A041F;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  margin: 0 10px 5px 0;
+}
+
+.contact .left .box-subtitles {
+      font-family: 'Quantico', arial;
+      float: left;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.contact .left .box-subtitles img {
+  float: left;
+  margin: 0 25px 0 0;
+}
+
+.contact .left .box-subtitles .title {
+    color: #9A041F;
+    font-size: 14px;
+    margin: 0 auto 0 auto;
+  
+}
+
+.contact .left .box-subtitles .dato {
+    color: #000000;
+    font-size: 16px;
+}
+
+.contact .left .box-subtitles .dato.fine {
+    font-size: 15px;
+}
+
+.contact .right {
+    float: right;
+    width: 680px;
+  
+}
+
+.contact .right .box-form {
+  background: url("/bundles/vaxfront/images/contacto/box-form.png") no-repeat scroll 0 0 #FFFFFF;
+  width: 658px;
+  height: 405px;
+  margin: 0 0 0 15px;
+}
+
+.contact .right .box-form form {
+    /*float: right;*/
+    /*margin: 20px 20px 0 0;*/
+}
+
+.contact .right .box-form form .izq  {
+  float: left;
+  width: 320px;
+  margin: 17px 0 0 0;
+
+}
+
+.contact .right .box-form form .izq div {
+  float: left;
+  margin: 0;
+}
+
+.contact .right .box-form form .izq div label {
+  float: left;
+  /*width: 100%;*/
+  width: 320px;
+  color: #AEAEAE;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px 0 10px 20px;
+}
+
+.contact .right .box-form form .izq div input {
+  border: 1px solid #9A041F;
+  width: 275px;
+  height: 25px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 2px 0 0 5px;
+  color: #AEAEAE;
+  margin: 0 0 0 20px;
+}
+
+.contact .right .box-form form .der  {
+  float: right;
+  width: 330px;
+  margin: 35px 0 0 0;
+}
+
+.contact .right .box-form form .der div {
+  
+}
+
+.contact .right .box-form form .der div label {
+  color: #AEAEAE;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.contact .right .box-form form .der div textarea {
+  border: 1px solid #9A041F;
+  width: 300px;
+  height: 260px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 0 0 5px;
+  color: #AEAEAE;
+}
+
+.contact .right .box-form form .der input.btn-submit {
+  border: none;
+  background: url("/bundles/vaxfront/images/contacto/enviar-link.png") no-repeat scroll 0 0 transparent;
+  width: 80px;
+  height: 21px;
+  float: right;
+  margin: 15px 30px 0 0;
+}
+
+.contact .right .box-form form .der input.btn-submit:hover {
+  background: url("/bundles/vaxfront/images/contacto/enviar-hover.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+}
+
+.contact .right .bottons {
+  background: url("/bundles/vaxfront/images/contacto/fondo-links-cont.jpg") no-repeat scroll 0 0 #FFFFFF;
+  width: 640px;
+  height: 111px;
+  float: left;
+  margin: 0 0 0 24px;  
+}
+
+.contact .right .bottons a.msn {
+  background: url("/bundles/vaxfront/images/contacto/msn-link.png") no-repeat scroll 7px 10px transparent;
+  width: 304px;
+  height: 90px;
+  float: left;
+}
+
+.contact .right .bottons a.msn:hover {
+  background: url("/bundles/vaxfront/images/contacto/msn-hover.png") no-repeat scroll 7px 10px transparent;
+}
+
+
+.contact .right .bottons a.facebook {
+  background: url("/bundles/vaxfront/images/contacto/face-link.png") no-repeat scroll 24px 10px transparent;
+  width: 325px;
+  height: 90px;
+  float: left;
+}
+
+.contact .right .bottons a.facebook:hover {
+  background: url("/bundles/vaxfront/images/contacto/face-hover.png") no-repeat scroll 24px 10px transparent;
+}
+
+
+/*mensaje recibido*/
+
+.contact .right .box-form .recibido {
+    color: #AEAEAE;
+    font-size: 24px;
+    margin: 50px 0 0 50px;
+    float: left;
+    width: 100%;
+}
+
+/* errores de validacion */
+.box-form form .izq div ul,
+.box-form form .der div ul {
+  float: left;
+  margin: 0 0 0 0;
+}
+
+/* errores de validacion */
+.box-form form .izq div ul li,
+.box-form form .der div ul li {
+  color: #fb2c2c;
+  font-weight: bold;
+  float: left;
+  margin: -5px 0 0 20px;
+  font-size: 11px;
+}
+
+.box-form .flash-enviado {
+  position: relative;
+  display: block;
+  left: 15px;
+  top: 12px;
+  background-color: #baed6a;
+  opacity: 0.7;
+  filter: alpha(opacity = 70);
+  color: #000000;
+  border-bottom: 2px solid #6cab08;
+  text-align: center;
+  /*margin: 11px 0 0 20px;*/
+  width: 626px;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OFERTAS*/
+
+.ofertas {
+  float: left;
+  margin: 30px auto 30px auto;
+
+}
+
+.ofertas .left {
+    float: left;
+    width: 278px;
+    /*height: 960px;*/
+}
+
+.ofertas .left img {
+  margin: 20px 0 20px 33px;
+}
+
+.ofertas .left .texto {
+    font-family: 'Quantico', arial;
+    color: #AEAEAE;
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+}
+
+
+.ofertas .right {
+    float: right;
+    width: 610px;
+    margin: 0 0 0 60px;
+}
+
+.ofertas .right .oferta-box {
+  width: 140px;
+  height: 210px;
+  border: 1px solid #AEAEAE;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  margin: 20px 30px 20px 30px;
+}
+
+.ofertas .right .oferta-box .up-box {
+  height: 140px;
+  float: left;
+}
+
+.ofertas .right .oferta-box .title {
+  border-bottom: 1px solid #AEAEAE;
+  text-align: center;
+  width: 140px;
+  font-family: 'Quantico', arial;
+  font-size: 14px;
+  color: #9A041F;
+}
+
+.ofertas .right .oferta-box img {
+  display: block;
+  margin: 15px auto 5px auto;
+}
+
+.ofertas .right .oferta-box .description {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+
+}
+
+.ofertas .right .oferta-box .price {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
+.ofertas .right .oferta-box .warranty {
+  color: #AEAEAE;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.out-container .footer {
+  background: url("/bundles/vaxfront/images/base/pattern-footer.jpg") repeat-x scroll 0 0 #FFFFFF;
+  float: left;
+  width: 100%;
+  height: 256px;
+}
+
+.out-container .footer .inner-footer {
+  width: 960px;
+  margin: 0 auto 10px auto;
+}
+
+.out-container .footer .inner-footer .images {
+  margin: 0 auto 0 auto;
+}
+
+.out-container .footer .inner-footer .images a  {
+  text-decoration: none;
+}
+
+.out-container .footer .inner-footer .images a:hover  {
+
+}
+
+.out-container .footer .inner-footer .images a img {
+  margin: 5px 0 5px 0;
+}
+
+.out-container .footer .inner-footer .line{
+
+}
+
+.out-container .footer .inner-footer .text {
+  font-family: 'Quantico', arial;
+  color: #9A041F;
+  font-size: 14px;
+  float: left;
+  margin: 11px 0 0 0;
+
+}
+
+.out-container .footer .inner-footer .social-red {
+  float: right;
+  margin: 0 23px 0 0;
+}
+
+.out-container .footer .inner-footer .social-red .messenger {
+  float: left;
+  margin: 0 26px 0 0;
+}
+
+.out-container .footer .inner-footer .social-red .facebook {
+  float: left;
+  margin: 11px 5px 0 0;
+}

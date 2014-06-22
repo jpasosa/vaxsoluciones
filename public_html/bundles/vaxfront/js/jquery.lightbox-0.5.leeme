@@ -1,0 +1,10 @@
+oct-2012
+
+
+Tuve que poner la carga de las imágenes en el .js de la manera 'bundle/xxxxxxx'
+
+Ojo que si no, no funciona la lectura de imágenes. Dejar de esa manera. Pero localmente así no funca, entonces en git está de la manera que funciona localmente.
+
+:)
+
+

@@ -1,0 +1,107 @@
+<!-- Activando jQuery lightBox plugin -->
+<script type="text/javascript">
+$(function() {
+    $('#gallery a').lightBox();
+});
+</script>
+
+
+<!-- aparece el ver todas las ofertas abajo, usando position relative -->
+<a class="ver-todas" href="{{ path('ofertas') }}">
+    <img src="{{ asset('bundles/vaxfront/images/ofertas/see-all.png') }}" width="177" height="18" />
+</a>
+
+<div class="out-container-slider">
+    <div class="title"> Ofertas del mes </div>
+
+    <!-- MODULO DE OFERTAS (SLIDER VERTICAL) -->
+    <div class="contenedor-slider">
+        <div class="bloque-slider">
+            <div id="gallery"> <!-- Para poder utilizar el lightBox de las imágenes -->        
+                <ul>
+                    <li> <div class="modulo-slider"> </div> </li>
+
+                    <li>
+                        <div class="modulo-slider">
+                            <div class="left">
+                                <a class="image" href="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-biostar-n68s3.jpg') }}"
+                                        title="Mother BIOSTAR n68s3">
+                                    <img src="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-biostar-n68s3.jpg') }}" width="80" height="50" />
+                                </a>
+                            </div>
+                            <div class="right">
+                                <div class="slide-title"> Mother BIOSTAR </div>
+                                <div class="description"> n68s3 </div>
+                                <div class="price"> U$D47 </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="modulo-slider">
+                            <div class="left">
+                                <a class="image" href="{{ asset('bundles/vaxfront/images/ofertas/productos/router-wifi-TL-WR740N.jpg') }}"
+                                        title="Router Inalámbrico TP-LINK WR740N">
+                                    <img style="margin-left: 20px;" src="{{ asset('bundles/vaxfront/images/ofertas/productos/router-wifi-TL-WR740N.jpg') }}" width="45" height="53" />
+                                </a>
+                            </div>
+                            <div class="right">
+                                <div class="slide-title"> Router Inálambrico TP-LINK </div>
+                                <div class="description"> WR740N </div>
+                                <div class="price"> U$D35 </div>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="modulo-slider">
+                            <div class="left">
+                                <a class="image" href="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-msi-880gm-e35.jpg') }}"
+                                        title="Mother MSI 880gm e35">
+                                    <img src="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-msi-880gm-e35.jpg') }}" width="80" height="50" />
+                                </a>
+                            </div>
+                            <div class="right">
+                                <div class="slide-title"> Mother msi </div>
+                                <div class="description"> 880gm e35 </div>
+                                <div class="price"> U$D90 </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="modulo-slider">
+                            <div class="left">
+                                <a class="image" href="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-msi-880gm-e41.jpg') }}"
+                                        title="Mother MSI 880gm e41">
+                                    <img src="{{ asset('bundles/vaxfront/images/ofertas/productos/mother-msi-880gm-e41.jpg') }}" width="80" height="50" />
+                                </a>
+                            </div>
+                            <div class="right">
+                                <div class="slide-title"> Mother msi </div>
+                                <div class="description"> 880gm e41 </div>
+                                <div class="price"> U$D80 </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div> <!-- FIN id=gallery -->
+      
+        </div>
+        <p class="mover-slider-vertical">
+            <a class="subir-slider"> </a>
+            <a class="bajar-slider"> </a>
+        </p>
+
+    </div>
+
+</div>  <!-- fin class="out-container-slider" -->
+<div class="cotizaciones">
+    <div class="dolarhoy">
+        <a href="http://www.dolarhoy.com/index.php" target="_blank"> COTIZAR EN dolarhoy.com </a>
+    </div>
+    <div class="dolarblue">
+        <a href="http://www.dolarblue.net/" target="_blank"> COTIZAR EN dolarblue.net </a>
+    </div>
+</div>

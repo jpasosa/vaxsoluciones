@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#"> <!-- agregado para facebook -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="Vaxsoluciones. Reparación Notebooks, antenas wifi. Reballing." />
+        <meta name="description" content="Reparación de notebooks, Reballing, Reparación de antenas wifi, Reparacion de mothers, Reparacion de placas de video, de monitores." /> 
+        <title>
+            {% block title %}
+                :: VAXSOLUCIONES ::
+            {% endblock %}
+        </title>
+        
+        
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/vaxfront/css/main.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/vaxfront/css/slider-vertical.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/vaxfront/css/jquery.lightbox-0.5.css') }}" type="text/css" rel="stylesheet" />
+            <link href='http://fonts.googleapis.com/css?family=Quantico:400,400italic,700' rel='stylesheet' type='text/css'>
+            <link href="{{ asset('bundles/vaxfront/css/jquery.nivo-slider.css') }}" type="text/css" rel="stylesheet" />
+            <link rel="shortcut icon" type="image/icon" href="{{ asset('bundles/vaxfront/images/base/vax.ico') }}" />
+        {% endblock %}
+        
+
+        {% block javascripts %}
+            <script src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js" type="text/javascript"></script>
+            <script src="{{ asset('bundles/vaxfront/js/slider-vertical.js') }}"></script>
+            <script src="{{ asset('bundles/vaxfront/js/jquery.lightbox-0.5.js') }}"></script>
+            <script src="{{ asset('bundles/vaxfront/js/jquery.nivo.slider.pack.js') }}"></script>
+            <script src="{{ asset('bundles/vaxfront/js/slide-show.js') }}"></script>
+            <!--[if lt IE 7]>
+                <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+            <![endif]-->
+
+        {% endblock %}
+    
+    </head>
+    
+    <body>
+        <!-- boton like del facebook -->
+        <div id="fb-root"></div>
+        <script>
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="out-container">        
+            <div class="header">
+                {% block header %}
+                    <div class="inner-header">
+                        <div class="logo">
+                            <a href="{{ path('homepage') }}" > </a>
+                        </div>
+                        
+                        {% block menu %}    <!-- MENU -->
+                            <div class="nav-container">
+                                <div>
+                                    <ul class="nav">
+                                        <li> <a class="{% if (app.request.get('_route') == 'homepage') %}active{% endif %}"
+                                                        href="{{ path('homepage') }}"> Home </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'nosotros'
+                                                                        or app.request.get('_route') == 'historia') %}active{% endif %}"
+                                                        href="{{ path('nosotros') }}"> Nosotros </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'servicios'
+                                                                        or app.request.get('_route') == 'garantia'
+                                                                        or app.request.get('_route') == 'notebook'
+                                                                        or app.request.get('_route') == 'placavideo'
+                                                                        or app.request.get('_route') == 'seguridad'
+                                                                        or app.request.get('_route') == 'faq') %}active{% endif %}"
+                                                        href="{{ path('servicios') }}"> Servicios </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'clientes') %}active{% endif %}"
+                                                        href="{{ path('clientes') }}"> Nuestros Clientes </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'ubiquiti') %}active{% endif %}"
+                                                        href="{{ path('ubiquiti') }}"> Ubiquiti </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'ofertas') %}active{% endif %}"
+                                                        href="{{ path('ofertas') }}"> Ofertas </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'contacto') %}active{% endif %}"
+                                                        href="{{ path('contacto') }}"> Contacto </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endblock %}
+                        
+                        {% block submenu %}  <!-- SUB-MENU -->
+                            <!-- SI está en nosotros deben aparecer dos submenúes -->
+                            {% if (app.request.get('_route') == 'nosotros'
+                                                or app.request.get('_route') == 'historia')  %}
+                                  <div class="sub-nav">
+                                    <div>
+                                      <ul class="sub-nav">
+                                        <li> <a class="{% if (app.request.get('_route') == 'nosotros') %}active{% endif %}"
+                                                        href="{{ path('nosotros') }}"> Quienes Somos </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'historia') %}active{% endif %}"
+                                                        href="{{ path('historia') }}"> Historia </a> </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                            {% endif %}
+
+
+
+
+
+
+                            <!-- SI está en servicios deben aparecer cinco submenúes -->
+                            {% if (app.request.get('_route') == 'servicios'
+                                                or app.request.get('_route') == 'garantia'
+                                                or app.request.get('_route') == 'seguridad'
+                                                or app.request.get('_route') == 'placavideo'
+                                                or app.request.get('_route') == 'notebook'
+                                                or app.request.get('_route') == 'motherboard'
+                                                or app.request.get('_route') == 'faq')  %}
+                                  <div class="sub-nav">
+                                    <div>
+                                      <ul class="sub-nav">
+                                        <li> <a class="{% if (app.request.get('_route') == 'garantia') %}active{% endif %}"
+                                                        href="{{ path('garantia') }}"> Garantía </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'servicios') %}active{% endif %}"
+                                                        href="{{ path('motherboard') }}"> Motherboard </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'notebook') %}active{% endif %}"
+                                                        href="{{ path('notebook') }}"> Notebook </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'placavideo') %}active{% endif %}"
+                                                        href="{{ path('placavideo') }}"> Placa de Video </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'seguridad') %}active{% endif %}"
+                                                        href="{{ path('seguridad') }}"> Seguridad </a> </li>
+                                        <li> <a class="{% if (app.request.get('_route') == 'faq') %}active{% endif %}"
+                                                        href="{{ path('faq') }}"> Faq (Preg. Frecuentes) </a> </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                            {% endif %}
+
+                        {% endblock %}  <!-- Termina bloque sub-menu -->
+
+                        <!-- BANNERS de la home-->
+                        {% if (app.request.get('_route') == 'homepage') %}
+                            <div id="wrapper" class="banners">  
+                                <div class="slider-wrapper theme-default">
+                                    <div id="slider" class="nivoSlider">
+                                        <img src="{{ asset('bundles/vaxfront/images/banners/banner00.jpg') }}" alt="ubiquiti" data-thumb="{{ asset('bundles/vaxfront/images/banners/banner00.jpg') }}" width="940" height="280" />
+                                        <img src="{{ asset('bundles/vaxfront/images/banners/banner01.jpg') }}" alt="reparacion notebooks" data-thumb="{{ asset('bundles/vaxfront/images/banners/banner01.jpg') }}" width="940" height="280" />
+                                        <img src="{{ asset('bundles/vaxfront/images/banners/banner02.jpg') }}" data-thumb="{{ asset('bundles/vaxfront/images/banners/banner02.jpg') }}" alt="reballing"  width="940" height="280" />
+                                        <img src="{{ asset('bundles/vaxfront/images/banners/banner03.jpg') }}" data-thumb="{{ asset('bundles/vaxfront/images/banners/banner03.jpg') }}" alt="reballing" data-transition="slideInLeft"   width="940" height="280" />
+                                        <img src="{{ asset('bundles/vaxfront/images/banners/banner04.jpg') }}" data-thumb="{{ asset('bundles/vaxfront/images/banners/banner04.jpg') }}" alt="reparacion antenas wifi" title="#htmlcaption"   width="940" height="280" />
+                                    </div>
+                                </div>
+                            </div> <!-- FIN banners -->
+                        {% endif %}
+                    </div>  <!-- FIN inner-header -->
+                {% endblock %}  <!-- FIN block HEADER -->
+            </div> <!-- FIN class="header" -->
+
+            <div class="content">
+                {% block body %}
+                    
+                    {% if (app.request.get('_route') == 'contacto')  %} <!-- sección contacto -->
+                            <div class="contact">
+                                {% block contacto %}
+                                {% endblock %}
+                            </div>
+                    {% elseif (app.request.get('_route') == 'ofertas')  %} <!-- sección ofertas -->               
+                            <div class="ofertas">
+                                {% block ofertas %}
+                                {% endblock %}
+                            </div>
+                    
+                    {% else %}                    
+                            {% if (app.request.get('_route') == 'homepage')  %}
+                                <div class="home-col-left">
+                            {% else  %}
+                                <div class="col-left">
+                            {% endif  %}
+                            
+                            {% block col_left %}
+                                esto esta en la base
+                            {% endblock %}
+                            
+                                </div>
+
+
+                            {% if (app.request.get('_route') == 'homepage')  %}
+                                    <div class="home-col-right">
+                            {% else  %}
+                                    <div class="col-right">
+                            {% endif  %}
+                                    
+                            {% include 'VaxFrontBundle:Page:slide-ofertas.html.twig' %}
+                                    </div>
+                    {% endif %}
+                    
+
+                {% endblock %}
+            </div>
+
+            
+
+            
+            <!-- FOOTER -->
+            {% include 'VaxFrontBundle:Page:footer.html.twig' %}
+        </div> <!-- cierro out-container -->
+    </body>
+</html>
